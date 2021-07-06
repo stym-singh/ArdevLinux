@@ -1,0 +1,20 @@
+{
+  "name": "Installer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "css-build": "node-sass --omit-source-map-url static/styles/bulma.scss static/styles/bulma.css",
+    "css-watch": "npm run css-build -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.9.3",
+    "electron": "^13.1.5",
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {}
+}
