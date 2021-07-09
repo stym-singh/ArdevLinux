@@ -1,20 +1,26 @@
 {
-  "name": "Installer",
+  "name": "ardevconfigure",
   "version": "1.0.0",
-  "description": "",
+  "description": "A configure package for Ardev Linux",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "css-build": "node-sass --omit-source-map-url static/styles/bulma.scss static/styles/bulma.css",
     "css-watch": "npm run css-build -- --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "ardev",
+    "arch",
+    "linux"
+  ],
+  "author": "Satyam Singh",
+  "license": "MIT",
   "devDependencies": {
-    "bulma": "^0.9.3",
-    "electron": "^13.1.5",
+    "electron": "^13.1.6",
+    "prettier": "2.3.2",
     "node-sass": "^6.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0"
+  }
 }
