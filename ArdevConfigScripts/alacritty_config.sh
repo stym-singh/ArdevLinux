@@ -6,7 +6,7 @@ fi
 
 export alac_theme="$(cat "$1" | jq '.[] | .theme')"
 
-grep -i alac_theme ./alac_themes.json
+grep -i alac_theme ./themes/alac_themes.json
 output=$?
 
 if [[ $output -eq 0 ]]; then
