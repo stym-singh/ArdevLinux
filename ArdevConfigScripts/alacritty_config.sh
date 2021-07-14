@@ -2,6 +2,7 @@
 
 if [[ ! -f "$1" ]]; then
     echo "Error 501: Json file doesn't exist"
+    exit 501
 fi
 
 export alac_theme="$(cat "$1" | jq '.[] | .theme')"
@@ -11,6 +12,7 @@ output=$?
 
 if [[ $output -eq 0 ]]; then
     echo "Error 502: $alac_theme theme doens't exist"
+    exit 502
 fi
 
 themes=./themes/alac_themes.json
