@@ -1,0 +1,97 @@
+window:
+  #dimensions:
+  #  columns: 0
+  #  lines: 0
+  #position:
+  #  x: 0
+  #  y: 0
+
+  padding:
+    x: 20
+    y: 20
+
+   #Spread additional padding evenly around the terminal content.
+  dynamic_padding: true
+
+  #title: Alacritty
+  #class:
+    #instance:Alacritty
+    #general: Alacritty
+
+  #gtk_theme_variant: None
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+
+cursor:
+  style: Block # ▇ Block, _ Underline, | Beam
+  unfocused_hollow: true
+  # Live config reload (changes require restart)
+live_config_reload: true
+shell:
+  program: /usr/bin/zsh
+  #args:
+    #- --login
+
+font:
+  normal:
+    family: ${font_family}
+    style: Regular
+
+  bold:
+    family: ${font_family}
+    style: Bold
+
+  italic:
+    family: ${font_family}
+    style: Italic
+
+  bold_italic:
+    family: ${font_family}
+    style: Bold Italic
+
+  size: ${font_size}
+
+# Colors (Gruvbox dark)
+colors:
+  # Default colors
+  primary:
+    # hard contrast: background = '#1d2021'
+    background: '${background}'
+    # soft contrast: background = '#32302f'
+    foreground: '${foreground}'
+
+  # Normal colors
+  normal:
+    black:   '${black_normal}'
+    red:     '${red_normal}'
+    green:   '${green_normal}'
+    yellow:  '${yellow_normal}'
+    blue:    '${blue_normal}'
+    magenta: '${magenta_normal}'
+    cyan:    '${cyan_normal}'
+    white:   '${white_normal}'
+
+  # Bright colors
+  bright:
+    black:   '${black_bright}'
+    red:     '${red_bright}'
+    green:   '${green_bright}'
+    yellow:  '${yellow_bright}'
+    blue:    '${blue_bright}'
+    magenta: '${magenta_bright}'
+    cyan:    '${cyan_bright}'
+    white:   '${white_bright}'
+
+key_bindings:
+  # (Windows/Linux only)
+  - { key: V,        mods: Control|Alt, action: Paste            }
+  - { key: C,        mods: Control|Alt, action: Copy             }
+  - { key: Insert,   mods: Shift,         action: PasteSelection   }
+  - { key: Key0,     mods: Control,       action: ResetFontSize    }
+  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize }
+  - { key: NumpadSubtract, mods: Control,       action: DecreaseFontSize }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
