@@ -2,7 +2,6 @@ var ipcRenderer = require('electron').ipcRenderer
 const nextWindow = document.getElementById('nextbutton')
 
 nextWindow.addEventListener('click', () => {
-    console.log('clicked'),
     data = {};
     data.font_name = document.getElementById("font-name").value;
     data.theme = document.getElementById("theme").value;

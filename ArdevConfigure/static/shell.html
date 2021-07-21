@@ -9,7 +9,7 @@
     />
     <meta name="viewport" content="width=device-width" />
 
-    <title>Ardev Linux Configuration - Startpage</title>
+    <title>Ardev Linux Configuration - Shell</title>
     <link href="styles/halfmoon-variables.min.css" rel="stylesheet" />
   </head>
   <body data-dm-shortcut-enabled="true" data-set-preferred-mode-onload="true">
@@ -33,16 +33,54 @@
         </div>
         <div class="container">
           <div class="m-10">
-            <h1 class="text-center font-weight-bolder">
-              Ardev Linux Configuration
-            </h1>
+            <h1 class="text-center font-weight-bolder">Shell</h1>
+            <form>
+              <div class="form-group">
+                <label for="default-shell">Default Shell</label>
+                <select class="form-control" id="default-shell">
+                  <option value="" selected="selected" disabled="disabled">
+                    Select Default Shell
+                  </option>
+                  <option value="bash">Bash</option>
+                  <option value="zsh">Zsh</option>
+                </select>
+              </div>
+              <div class="form-group d-none" id="bash-options">
+                <h2>To be filled later...</h2>
+              </div>
+              <div class="form-group d-none" id="zsh-options">
+                <label for="zsh-options">Zsh Options</label>
+                <div class="custom-switch m-5">
+                  <input type="checkbox" id="zsh-completion" value="" />
+                  <label for="zsh-completion">Zsh Completion</label>
+                </div>
+                <div class="custom-switch m-5">
+                  <input type="checkbox" id="zsh-autosuggestion" value="" />
+                  <label for="zsh-autosuggestion">Zsh Autosuggestion</label>
+                </div>
+                <div class="custom-switch m-5">
+                  <input
+                    type="checkbox"
+                    id="zsh-syntax-highlighting"
+                    value=""
+                  />
+                  <label for="zsh-syntax-highlighting"
+                    >Zsh Syntax Highlighting</label
+                  >
+                </div>
+                <div class="custom-switch m-5">
+                  <input type="checkbox" id="zsh-vi-mode" value="" />
+                  <label for="zsh-vi-mode">Zsh Vi Mode</label>
+                </div>
+              </div>
+            </form>
             <div class="text-center">
               <button
                 id="nextbutton"
                 class="btn btn-primary btn-lg"
                 type="button"
               >
-                Start Configuring
+                Next
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -65,7 +103,6 @@
 
     <!-- Halfmoon JS -->
     <script src="src/halfmoon.min.js"></script>
-    <script src="src/index.js"></script>
+    <script src="src/shell.js"></script>
   </body>
 </html>
-
