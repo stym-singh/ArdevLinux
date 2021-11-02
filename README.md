@@ -1,5 +1,5 @@
 # ArdevLinux
-Ardev Linux is an Arch Linux based distribution which aims to simplify the installation and confirguration of your system. It works by invoking a set of installation and configuration scripts as and when required.
+Ardev Linux is an Arch Linux based distribution that aims to simplify the installation and configuration of your system. It works by invoking a set of installation and configuration scripts as and when required.
 
 ## Packages used
 - Windowing System - Xorg
