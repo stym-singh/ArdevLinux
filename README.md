@@ -6,7 +6,7 @@ Ardev Linux is an Arch Linux based distribution that aims to simplify the instal
 - Window Manager - BSPWM
 - Programs Menu - Rofi
 - Shell - Bash/Zsh
-- Terminal Emulator - Alacritty/Kitty
+- Terminal Emulator - Alacritty/Kitty/urxvt
 
 ## Showcase
 ![Ardev Linux floating windows](./public/screenshots/screenshot_1.png)
